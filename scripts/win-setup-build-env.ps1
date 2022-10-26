@@ -2,7 +2,7 @@
 # Note that building borg requires OpenSSL which is not available by default.
 # Use the win-download-openssl.ps1 script to get correct OpenSSL version.
 
-$opensslPath = Resolve-Path "$PSScriptRoot\..\external\cpython-bin-deps-openssl-bin-1.1.1c\$env:PROCESSOR_ARCHITECTURE"
+$opensslPath = Resolve-Path "$PSScriptRoot\..\external\cpython-bin-deps-openssl-bin-1.1.1q\$env:PROCESSOR_ARCHITECTURE"
 if(!(Test-Path $opensslPath)) {
     Write-Host "OpenSSL not found! Please run win-download-openssl.ps1 and check if your platform is supported."
     exit
